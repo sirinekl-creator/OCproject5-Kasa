@@ -1,0 +1,16 @@
+.footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+
+  &__logo {
+    width: 120px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}
