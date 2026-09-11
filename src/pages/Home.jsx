@@ -1,11 +1,15 @@
 import data from "../data/logements.json";
 import Card from "../components/Card/Card";
 import Banner from "../components/Banner/Banner";
+import homeBanner from "../assets/Banner/home-banner.jpg";
 
 function Home() {
   return (
     <>
-      <Banner />
+      <Banner
+      image={homeBanner}
+      title="Chez vous, partout et ailleurs"
+      />
 
       <div className="gallery">
         {data.map((logement) => (
