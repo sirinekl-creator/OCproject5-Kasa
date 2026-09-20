@@ -3,6 +3,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 
+  box-sizing: border-box;
+
   max-width: 1240px;
   margin: 40px auto;
   padding: 50px;
