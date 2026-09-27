@@ -1,0 +1,33 @@
+.about {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about__banner {
+  width: 100%;
+  height: 223px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.about__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__collapses {
+  width: 100%;
+  max-width: 1023px;
+
+  margin: 40px auto 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
