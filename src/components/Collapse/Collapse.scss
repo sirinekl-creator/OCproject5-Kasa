@@ -61,3 +61,26 @@
   color: #ff6060;
   line-height: 1.5;
 }
+
+@media screen and (max-width: 768px) {
+  .collapse__header {
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+  }
+
+  .collapse__arrow {
+    width: 24px;
+    height: 24px;
+  }
+
+  .collapse__content--open {
+    padding: 15px;
+  }
+
+  .collapse__content p {
+    font-size: 12px;
+  }
+}

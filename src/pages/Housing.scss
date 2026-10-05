@@ -1,0 +1,229 @@
+.housing {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px 50px;
+
+  // =========================
+  // INFORMATIONS
+  // =========================
+
+  &__information {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    margin-top: 30px;
+  }
+
+  &__details {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+
+    color: #ff6060;
+
+    font-size: 36px;
+    font-weight: 500;
+  }
+
+  &__location {
+    margin: 5px 0 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  // =========================
+  // TAGS
+  // =========================
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  &__tag {
+    min-width: 115px;
+
+    padding: 4px 15px;
+
+    background-color: #ff6060;
+    color: white;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  // =========================
+  // HÔTE + RATING
+  // =========================
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 20px;
+  }
+
+  &__host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__host-name {
+    max-width: 100px;
+    margin: 0;
+
+    color: #ff6060;
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  &__host-picture {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+  }
+
+  // =========================
+  // ÉTOILES
+  // =========================
+
+  &__rating {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__star {
+    color: #e3e3e3;
+
+    font-size: 28px;
+
+    &--active {
+      color: #ff6060;
+    }
+  }
+
+  // =========================
+  // COLLAPSES
+  // =========================
+
+  &__collapses {
+    display: flex;
+    gap: 76px;
+
+    margin-top: 25px;
+  }
+
+  &__collapse {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__equipment {
+    display: block;
+  }
+}
+
+
+// =============================================
+// VERSION MOBILE
+// =============================================
+
+@media screen and (max-width: 768px) {
+
+  .housing {
+    padding: 0 20px 30px;
+
+    &__information {
+      flex-direction: column;
+
+      margin-top: 15px;
+      gap: 15px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    &__location {
+      margin: 5px 0 10px;
+
+      font-size: 14px;
+    }
+
+    // Tags
+
+    &__tags {
+      gap: 10px;
+    }
+
+    &__tag {
+      min-width: 84px;
+
+      padding: 3px 10px;
+
+      border-radius: 5px;
+
+      font-size: 10px;
+    }
+
+    // Hôte + étoiles sur la même ligne
+
+    &__aside {
+      width: 100%;
+
+      flex-direction: row-reverse;
+      align-items: center;
+
+      gap: 10px;
+    }
+
+    &__host-name {
+      max-width: 70px;
+
+      font-size: 12px;
+    }
+
+    &__host-picture {
+      width: 32px;
+      height: 32px;
+    }
+
+    // Étoiles
+
+    &__rating {
+      gap: 4px;
+    }
+
+    &__star {
+      font-size: 18px;
+    }
+
+    // Collapse
+
+    &__collapses {
+      flex-direction: column;
+
+      gap: 20px;
+
+      margin-top: 15px;
+    }
+  }
+}
