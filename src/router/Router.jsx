@@ -14,9 +14,10 @@ function Router() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/logement/:id" element={<Logement />} />
-        </Route>
 
+ {/* Route 404 */}
         <Route path="*" element={<Error />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
