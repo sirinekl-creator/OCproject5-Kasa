@@ -1,0 +1,16 @@
+.home {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 0 20px;
+  }
+}
